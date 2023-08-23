@@ -1,0 +1,9 @@
+// Purpose: partial scss file to establish the breakpoints for various screen sizes to be referenced in media queries//
+
+$small: 576px;
+$medium: 768px;
+$large: 992px;
+$xlarge: 1200px;
+$xxlarge: 1400px;
+
+// Note: xs is not defined because all screen sizes below 576px will clasify under this //

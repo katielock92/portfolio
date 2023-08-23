@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Katie Lock | Retrospective: my first Coder Academy assignment</title>
+    <link rel="icon" href="../images/favicon.png" />
+    <!-- linking external css specific to this page -->
+    <link rel="stylesheet" href="../styles/pages/blog-post.css" />
+    <!-- importing google fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Assistant|Sora"
+    />
+    <!-- linking javascript file for making mobile menu operate -->
+    <script src="../scripts/scripts.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="home">
+        <!-- top left-hand side of header for logo and name -->
+        <a href="../index.html"
+          ><img
+            class="logo"
+            alt="icon of the letter k"
+            src="../images/logo.png"
+        /></a>
+        <p class="name">katie lock</p>
+      </div>
+      <nav class="navigation">
+        <!-- top right-hand side of header with navigation menu, css used to switch between mobile hamburger menu and desktop horizontal menu -->
+        <button class="menuButton">
+          <img
+            src="../images/hamburger-menu.png"
+            class="hamburgericon"
+            onclick="toggleMobileNav()"
+          />
+        </button>
+        <div id="mobile-nav" class="mobile-closed">
+          <button
+            class="navlink"
+            onclick="window.location.href='../about.html';"
+          >
+            about
+          </button>
+          <button
+            class="navlink"
+            onclick="window.location.href='../portfolio.html';"
+          >
+            portfolio
+          </button>
+          <button
+            class="navlink"
+            onclick="window.location.href='../blog.html';"
+          >
+            blog
+          </button>
+          <button
+            class="navlink"
+            onclick="window.location.href='../contact.html';"
+          >
+            contact
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="blog-image">
+        <img
+          alt="woman's hands typing on a computer"
+          src="../images/woman-typing.png"
+        />
+      </div>
+      <article>
+        <h1>Retrospective: my first Coder Academy assignment</h1>
+        <h3>13 April 2023</h3>
+        <p>
+          It's done. My first assignment. Mixed emotions: relief, satisfaction,
+          pride, frustration, stress - it's all there.
+        </p>
+        <p>
+          I thought this would be the "easy one" - I mean for starters, I had
+          created a very similar site for my scholarship application in a
+          similar timeframe! And that was all self-taught and without the
+          guidance of instructors to teach me best practice. And yet that didn't
+          even seem to be matter - I wanted this to be bigger, I wanted this to
+          be <em>better.</em> I wanted to prove my worth.
+        </p>
+        <p>
+          The crushing weight of my own expectations was honestly the hardest
+          part. I had to remember - I'm still learning. It doesn't have to be
+          perfect. Heck, I can even keep changing and improving it whenever I
+          want after the submission so that it's constantly evolving - how cool
+          is that!
+        </p>
+        <p>
+          It's now 12 days after submission and I just received my mark back -
+          55.5/60. That's a <em>HIGH DISTINCTION!</em> I should be proud. And I
+          am! But this assignment wasn't without it's challenges, that's for
+          sure. Here's a retro on some of the things that this assignment taught
+          me...
+        </p>
+        <h4>Presentations aren't my strength...</h4>
+        <p>
+          I have the gift of the gab and can make an excellent slide deck. My
+          problem? Struggling to fit in everything I want to express and share,
+          without stumbling over my words or going over time. Working remote for
+          the last three years and learning to unmask my neurodivergencies
+          haven't aided me in this task either... So what can I do, when
+          presentations are going to be part of my future career in software?
+          Firstly, even if I am often excellent at working under time
+          pressure... don't leave recording your presentation until the
+          submission date. I'm looking at you, ADHD...
+        </p>
+        <p>
+          I've glanced ahead at the requirements of our upcoming assignments
+          and can see there's more presentations looming in the future, so I
+          certainly want to be more mindful about when I attempt to record my
+          presentation next time, so that I feel calm and prepared, and can
+          workshop the delivery.
+        </p>
+        <h4>Commit early, commit often</h4>
+        <p>
+          Something that I admit took me a little too long to get my head around
+          was how often you should commit to GitHub when working on your local
+          machine. My commits ending up coming in batches every few days with
+          pretty meaningless descriptions about what changes I actually made.
+        </p>
+        <p>
+          What I hope to get more comfortable with going forward is committing
+          straight from VSCode, rather than having to open up the Terminal app
+          for my commits. One step at a time I guess...
+        </p>
+        <h4>Semantics and accessibility can <em>always</em> be better</h4>
+        <p>
+          While I did put a lot of effort into my semantics and accessibility,
+          this ended up being an area that I lost the most marks on my
+          assignment - which goes to show how there are so many lenses to
+          consider when it comes to best practice.
+        </p>
+        <h4>So, what next?</h4>
+        <p>
+          I've already implemented a change for one of the pieces of feedback I
+          received that was a really simple fix, and I plan to revisit and make
+          adjustments to my site based on the remainder of the feedback. The
+          biggest one to consider is in relation to the colour scheme not having
+          enough contrast on some pages, which will involve having to update my
+          colour palette slightly.
+        </p>
+        <p>
+          Beyond my portfolio site, I'm now deep into learning Python and have
+          my first Workbook assignment due next weekend. The assignment features
+          a mixture of "intro to web" research questions, written questions on
+          features of Python, and problem-solving questions using a combination
+          of Python code, pseudocode and flowcharts. Always learning new things
+          at the moment!
+        </p>
+      </article>
+      <button onclick="window.location.href='../blog.html';">
+        Back to all posts →
+      </button>
+    </main>
+    <footer>Fueled by ☕ (Katie Lock 2023)</footer>
+  </body>
+</html>

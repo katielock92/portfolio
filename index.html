@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Katie Lock | Web Developer</title>
+  <link rel="icon" href="images/favicon.png">
+  <!-- linking external css specific to this page -->
+  <link rel="stylesheet" href="styles/pages/home.css" />
+  <!-- importing google fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Assistant|Sora" />
+  <!-- linking javascript file for making mobile menu operate -->
+  <script src="scripts/scripts.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="home">
+      <!-- top left-hand side of header for logo and name -->
+      <a href="index.html"><img class="logo" alt="icon of the letter k" src="images/logo.png" /></a>
+      <p class="name">katie lock</p>
+    </div>
+    <nav class="navigation">
+      <!-- top right-hand side of header with navigation menu, css used to swtich between mobile hamburger menu and desktop horizontal menu -->
+      <button class="menuButton">
+        <img src="images/hamburger-menu.png" class="hamburgericon" onclick="toggleMobileNav()" />
+      </button>
+      <div id="mobile-nav" class="mobile-closed">
+        <button class="navlink" onclick="window.location.href='about.html';">about</button>
+        <button class="navlink" onclick="window.location.href='portfolio.html';">portfolio</button>
+        <button class="navlink" onclick="window.location.href='blog.html';">blog</button>
+        <button class="navlink" onclick="window.location.href='contact.html';">contact</button>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="flex-container">
+      <div class="home-text">
+        <h3>👋🏻 hi, i'm...</h3>
+        <h1><span>katie</span> lock</h1>
+        <h2>emerging web developer based in melbourne</h2>
+      </div>
+      <div class="image">
+        <img alt="A photo of a smiling woman (Katie) in sepia tones" src="images/Katie_framed.png" />
+      </div>
+      <div class="work"><button onclick="window.location.href='portfolio.html';">see my work →</button></div>
+    </div>
+  </main>
+  <footer>
+    Fueled by ☕ (Katie Lock 2023)
+  </footer>
+</body>
+
+</html>

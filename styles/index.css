@@ -1,0 +1,140 @@
+/* Import default partial scss files */
+/* Create mixins */
+/* Commence scss styling */
+html {
+  font-family: "Assistant", sans-serif;
+  background-color: #F6F2ED;
+}
+
+/* Styling for header and navbar */
+header {
+  width: 95%;
+  margin-left: 2%;
+  margin-right: 2%;
+  height: 15vh;
+  font-family: "Lora", serif;
+  font-weight: bold;
+  color: #C066C1;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.home, .logo, .name, nav, .navbar {
+  display: inline-flex;
+  flex-direction: row;
+}
+
+/* set all nav child elements to inline flex rows*/
+.logo {
+  height: 50px;
+  width: 50px;
+}
+
+.logo:hover {
+  opacity: 50%;
+  transition: 0.7s;
+  transform: rotate(35deg);
+}
+
+/*come back to above to make it transition back smoothly when hover removed*/
+.name {
+  padding: 15px;
+}
+
+.home {
+  width: 50%;
+  margin-top: 15px;
+}
+
+.menuButton {
+  display: none;
+  background: transparent;
+  border: none !important;
+  z-index: 100;
+  margin: auto;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+/*above code copied from scholarship site - clean up accordingly*/
+.navbar {
+  width: 35%;
+  align-items: flex-end;
+}
+
+nav a {
+  margin: 0 15px;
+}
+
+.navlink, .navlink a {
+  list-style-type: none;
+  font-family: "Lora", serif;
+  font-weight: bold;
+  color: #C066C1;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.navlink a:hover {
+  opacity: 50%;
+  text-decoration: underline;
+  color: #c19964;
+}
+
+/*above is placeholder hover state*/
+main {
+  width: 85%;
+  margin: auto;
+}
+
+h1, h2 {
+  font-family: "Lora", serif;
+}
+
+h1 {
+  color: #C066C1;
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+h2 {
+  position: relative;
+  top: -40px;
+  left: 25px;
+}
+
+button {
+  background-color: #F5E2F5;
+  border: none;
+  text-align: center;
+  font-family: "Assistant", sans-serif;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+button a {
+  text-decoration: none;
+  color: #C066C1;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.flex-container {
+  display: inline-flex;
+  flex-direction: row;
+}
+
+.home-text {
+  flex-direction: column;
+  width: 50%;
+  padding-right: 50px;
+}
+
+.katie {
+  width: clamp(300px, 100%, 450px);
+  padding-top: 50px;
+}
+
+.image {
+  width: 50%;
+}/*# sourceMappingURL=index.css.map */

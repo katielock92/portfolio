@@ -1,0 +1,89 @@
+// Purpose: partial scss file to create mixins for common styling combinations //
+
+@mixin inline-flex-row {
+    display: inline-flex;
+    flex-direction: row;
+}
+
+@mixin flex-row-center {
+    /* commonly used centered flex row display */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-col-center {
+    /* commonly used centered flex column display */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin nav-text {
+    /* styling for text in navifation bar */
+    font-family: $font1;
+    color: $color1;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+@mixin page-head { 
+    /* creating styling for page heading on main sub-pages from Home */
+    text-align: center;
+    font-size: 3rem;
+    font-family: $font2;
+   @media screen and (min-width: $medium) {
+    font-size: 4rem;
+   }
+   @media screen and (min-width: $large) {
+    font-size: 5rem;
+   }
+}
+
+@mixin keywords { 
+    /* for when one or a few keywords change colour within a span */
+    span {
+        color: $color5;
+    }
+}
+
+@mixin square-button { 
+    /* styling for the main button used across the site */
+    background-color: $color2;
+    border: none;
+    box-shadow: 5px 5px $color3;
+    color: $color5;
+    padding: 10px;
+    text-align: center;
+    font-family: $font2;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+@mixin button-hover { 
+    /* hover behaviour for the above button */
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+@mixin shadow-5 { 
+    /* styling shortcut for a 5px box shadow */
+    box-shadow: 5px 5px $color3;
+}
+
+@mixin shadow-8 { 
+    /* styling shortcut for a 8px box shadow */
+    box-shadow: 8px 8px $color2;
+}
+
+@mixin shadow-10 { 
+    /* styling shortcut for a 10px box shadow */
+    box-shadow: 10px 10px $color3;
+}
+
+@mixin shadow-20 { 
+    /* styling shortcut for a 20px box shadow */
+    box-shadow: 20px 20px $color3;
+}

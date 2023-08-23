@@ -1,0 +1,140 @@
+/* Purpose: the scss file for any variations unique to the home page (index.html) */
+
+@import "../index";
+
+/* Commence scss styling */
+
+body {
+  main {
+    width: 90vw;
+    /* centering horizontally but adding extra space on top */
+    margin: 15px auto auto auto;
+
+    .flex-container {
+      @include flex-col-center();
+
+      .home-text {
+        text-align: center;
+
+        h1 {
+          color: $color3;
+          font-size: 3rem;
+          @include keywords();
+        }
+
+        h2 {
+          font-size: 1.4rem;
+        }
+
+        h3 {
+          font-size: 2rem;
+          /* brings the "hi i'm" to sit just above my name */
+          margin-bottom: -45px;
+        }
+      }
+
+      .image {
+        width: 75vw;
+
+        img {
+          /* photo will grow and shrink between 200-450px depending on vw */
+          width: clamp(200px, 100%, 450px);
+          /* image elements default to inline so resetting back to block to allow for auto margin to center */
+          display: block;
+          margin: auto;
+        }
+      }
+
+      .work {
+        button {
+          margin-top: 30px;
+          margin-bottom: 2rem;
+          @include square-button();
+        }
+
+        button:hover {
+          @include button-hover();
+        }
+      }
+    }
+  }
+}
+
+
+/* changes for tablet-sized screens and above */
+
+body {
+  /* to prevent scrolling on tablet and desktop due to footer position */
+  min-height: 97vh;
+  main {
+    padding-bottom: 0;
+  }
+}
+
+
+@media screen and (min-width: $medium) {
+  body {
+    main {
+      .flex-container {
+        .home-text {
+          h1 {
+            /* to grow font size of heading on larger screen */
+            font-size: 4rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* changes for computer-sized screens and above */
+
+@media screen and (min-width: $large) {
+  body {
+    main {
+
+      .flex-container {
+        /* creating a flex row layout with wrap to allow button div to sit below heading while image on right side of screen */
+        display: inline-flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        margin-top: 50px;
+
+        .home-text,
+        .image,
+        .work {
+          /* max width each div can have to display two next to each other in flex row */
+          width: 44vw;
+        }
+
+        .home-text {
+          /* text no longer to be centered now using a flex row design */
+          text-align: left;
+
+          h1 {
+            font-size: 5rem;
+          }
+
+          h2 {
+            font-size: 1.5rem;
+            position: relative;
+            /* allows top and left measurements below to be used and position this offset from left */
+            top: -40px;
+            left: 25px;
+          }
+        }
+
+        .work {
+          @include flex-col-center();
+
+          button {
+            margin-top: 0;
+            position: relative;
+            /* allows the button to be shifted upwards and fill the empty space */
+            top: -90px;
+          }
+        }
+      }
+    }
+  }
+}

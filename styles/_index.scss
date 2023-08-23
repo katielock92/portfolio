@@ -1,0 +1,48 @@
+// Purpose: the primary scss file for my website, with individual pages having their own for specific style variations
+
+// Import default partial scss files //
+
+@import "./defaults/colors";
+@import "./defaults/fonts";
+@import "./components/header";
+@import "./components/footer";
+
+/* Commence scss styling */
+
+body {
+  /* setting basic default styling for body elements */
+  background-color: $color4;
+  font-family: $font1;
+  color: $color1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* ensures background color stretches entire vh even if content doesn't fill page */
+  min-height: 100vh;
+  /* required for the fade-in keyframe below */
+  animation-name: fade;
+  animation-duration: 1.5s;
+  /* help keep footer text at bottom of all pages (when used in conjuction with _footer.scss */
+  position: relative;
+  main {
+    padding-bottom: 2.5rem;
+  }
+}
+
+p {
+  /* setting standard size for p elements */
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+}
+
+@keyframes fade {
+
+  /* fades-in html content on page upon load */
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

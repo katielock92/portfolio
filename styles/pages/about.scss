@@ -1,0 +1,270 @@
+/* Purpose: the scss file for any variations unique to about.html */
+
+@import "../index";
+
+/* Commence scss styling */
+
+main {
+  @include flex-col-center();
+
+  h1 {
+    @include page-head();
+    @include keywords();
+  }
+
+  .bio {
+    .bio-image {
+      /* the two images will overlap each other so will require some additional property changes, such as a relative position to allow positional properties to be used. negative margins used due to empty space from the images no longer being in their original position */
+      align-items: center;
+      width: 80vw;
+      margin-bottom: -80px;
+
+      .image-bonnie {
+        width: clamp(100px, 40%, 200px);
+        display: block;
+        margin: auto;
+        position: relative;
+        bottom: 100px;
+        right: 80px;
+        border-radius: 20px;
+        @include shadow-8();
+      }
+
+      .image-frisbee {
+        width: clamp(180px, 60%, 350px);
+        display: block;
+        margin: auto;
+        position: relative;
+        left: 30px;
+        /* has this image sitting below the other one */
+        z-index: -1;
+        border-radius: 20px;
+        @include shadow-8();
+      }
+    }
+
+    .bio-text {
+      display: block;
+      width: clamp(220px, 80vw, 500px);
+      margin: auto;
+    }
+
+    .bio-text {
+      @include keywords();
+
+      p {
+        margin-top: 0;
+      }
+    }
+
+    button {
+      display: block;
+      margin: 30px auto auto auto;
+      width: 180px;
+      @include square-button();
+    }
+
+    button:hover {
+      @include button-hover();
+    }
+  }
+
+  .skills-values-exp {
+    display: flex;
+    flex-direction: column;
+    width: clamp(220px, 80vw, 500px);
+    margin: auto;
+
+    h3 {
+      color: $color2;
+      font-weight: bolder;
+      font-size: 1.5rem;
+      text-align: center;
+      margin-bottom: -10px;
+    }
+
+    ul {
+      /* to create the background around each of the listed sections */
+      position: relative;
+      background-color: $color6;
+      border-radius: 25px;
+      padding: 15px;
+      @include shadow-8();
+    }
+
+    li {
+      position: relative;
+      list-style: none;
+      border-left: 1px solid $color5;
+      padding-bottom: 1.4rem;
+      padding-left: 20px;
+      margin-left: 10px;
+
+      &:last-child {
+        border: 0px;
+        padding-bottom: 0;
+      }
+
+      &:before {
+        /* used to create the connected dots on left-hand side */
+        content: "";
+        width: 15px;
+        height: 15px;
+        background: #ffffff;
+        border: 1px solid $color5;
+        box-shadow: 3px 3px 0px $color5;
+        border-radius: 50%;
+        position: absolute;
+        left: -10px;
+        top: 0px;
+      }
+
+      .sub {
+        font-weight: bolder;
+        font-size: 1rem;
+      }
+
+      p {
+        line-height: 1.5;
+        margin-top: 0.4rem;
+        padding-left: 10px;
+      }
+    }
+
+    em {
+      font-size: 0.7rem;
+      color: $color2;
+    }
+
+    .skills,
+    .values {
+      margin: 10px auto;
+      padding: 10px;
+    }
+
+    .exp {
+
+      .work,
+      .education {
+        margin: 10px auto;
+        padding: 10px;
+      }
+    }
+  }
+}
+
+/* changes for tablet-sized screens and above */
+
+@media screen and (min-width: $medium) {
+  main {
+
+    /* adjusting element sizes and positioning for larger screen size */
+    .bio {
+
+      .bio-image,
+      .bio-text {
+        width: clamp(500px, 70vw, 700px);
+        padding: 20px;
+      }
+
+      .bio-image {
+        margin-bottom: -250px;
+        margin-top: -20px;
+
+        .image-bonnie {
+          bottom: 220px;
+          right: 140px;
+          width: clamp(200px, 40%, 400px);
+        }
+
+        .image-frisbee {
+          left: 75px;
+          width: clamp(350px, 60%, 500px);
+        }
+      }
+    }
+
+    .skills-values-exp {
+      width: clamp(500px, 70vw, 700px);
+
+      .skills-values {
+        /* skills and values now show next to each other */
+        @include flex-row-center();
+
+        .skills,
+        .values {
+          width: 100%;
+          margin: 0 10px;
+        }
+      }
+    }
+
+  }
+}
+
+/* changes for computer-sized screens and above */
+
+@media screen and (min-width: $large) {
+  main {
+
+    .bio {
+      /* bio text now shown inline with images */
+      display: flex;
+      flex-direction: row-reverse;
+
+      /* adjusting element sizes and positioning for larger screen size */
+      .bio-image,
+      .bio-text {
+        width: 40vw;
+      }
+
+      .bio-image {
+        margin-bottom: -250px;
+        margin-top: -20px;
+
+        .image-bonnie {
+          bottom: 20vh;
+          right: 8vw;
+          width: clamp(250px, 40%, 400px);
+        }
+
+        .image-frisbee {
+          left: 8vw;
+          width: clamp(350px, 60%, 500px);
+        }
+      }
+
+      .bio-text {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    /* adjustment to flexbox to show skills/values on left-hand side, and experience/education on right-hand side */
+    .skills-values-exp {
+      width: 85vw;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      .skills-values {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin-right: 80px;
+
+        .skills,
+        .values {
+          width: 100%;
+        }
+      }
+
+      .exp {
+        width: 50%;
+      }
+    }
+
+  }
+}

@@ -1,0 +1,76 @@
+/* Purpose: the scss file for any variations unique to portfolio.html */
+
+@import "../index";
+
+/* Commence scss styling */
+
+main {
+  @include flex-col-center();
+
+  h1 {
+    @include page-head();
+    @include keywords();
+  }
+
+  .portfolio {
+
+    .project {
+      @include flex-col-center();
+      width: clamp(250px, 80vw, 400px);
+
+      img {
+        display: block;
+        width: clamp(250px, 100%, 400px);
+        box-shadow: 10px 10px $color3;
+        margin-top: 10px;
+        border: 3px solid $color1;
+        transition: 0.5s ease;
+      }
+      /* animation of the project image when hovered over to indicate you can click on it to see more */
+      img:hover {
+        transform: scale(1.1);
+        opacity: 0.7;
+      }
+
+      h3 {
+        font-size: 1.5rem;
+        color: $color2;
+        margin-bottom: -10px;
+      }
+    }
+  }
+}
+
+/* changes for tablet-sized screens and above */
+
+@media screen and (min-width: $medium) {
+ main {
+  /* increase of element width for larger screen sizes */
+    .project {
+      width: clamp(350px, 70vw, 500px);
+
+      img {
+        width: clamp(350px, 100%, 500px);
+      }
+    }
+  }
+}
+
+/* changes for computer-sized screens and above */
+
+@media screen and (min-width: $large) {
+  main {
+    .portfolio {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .project {
+        display: flex;
+        flex-direction: column;
+        margin: 0 40px;
+      }
+    }
+  }
+}

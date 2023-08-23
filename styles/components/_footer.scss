@@ -1,0 +1,19 @@
+// Purpose: partial scss file for styling the footer on all pages //
+
+@import "../defaults/colors";
+@import "../defaults/fonts";
+@import "./utils";
+@import "../defaults/breakpoints";
+
+body {
+  footer {
+    /* to keep footer text at bottom of page regardless of length of content */
+    position: absolute;
+    bottom: 0.3rem;
+    /* styling of text in footer */
+    width: 98%;
+    font-size: 0.7rem;
+    font-style: italic;
+    text-align: right;
+  }
+}

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Katie Lock | About</title>
+    <link rel="icon" href="images/favicon.png" />
+    <!-- linking external css specific to this page -->
+    <link rel="stylesheet" href="styles/pages/about.css" />
+    <!-- importing google fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Assistant|Sora"
+    />
+    <!-- linking javascript file for making mobile menu operate -->
+    <script src="scripts/scripts.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="home">
+        <!-- top left-hand side of header for logo and name -->
+        <a href="index.html"
+          ><img
+            class="logo"
+            alt="icon of the letter k"
+            src="images/logo.png"
+        /></a>
+        <p class="name">katie lock</p>
+      </div>
+      <nav class="navigation">
+        <!-- top right-hand side of header with navigation menu, css used to switch between mobile hamburger menu and desktop horizontal menu -->
+        <button class="menuButton">
+          <img
+            src="images/hamburger-menu.png"
+            class="hamburgericon"
+            onclick="toggleMobileNav()"
+          />
+        </button>
+        <div id="mobile-nav" class="mobile-closed">
+          <button
+            class="navlink"
+            onclick="window.location.href='about.html';"
+          >
+            about
+          </button>
+          <button
+            class="navlink"
+            onclick="window.location.href='portfolio.html';"
+          >
+            portfolio
+          </button>
+          <button
+            class="navlink"
+            onclick="window.location.href='blog.html';"
+          >
+            blog
+          </button>
+          <button
+            class="navlink"
+            onclick="window.location.href='contact.html';"
+          >
+            contact
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h1>about <span>katie</span></h1>
+      <div class="bio">
+        <div class="bio-image">
+          <img
+            class="image-frisbee"
+            alt="Two women playing ultimate frisbee - one is jumping for a disc in the air"
+            src="images/frisbee.png"
+          />
+          <img
+            class="image-bonnie"
+            alt="A blonde-haired woman (Katie) is smiling at the camera, holding a ginger cat"
+            src="images/bonnie.png"
+          />
+        </div>
+        <div class="bio-text">
+          <!-- text-based div for introducing myself -->
+          <h2>Hi, I'm <span>Katie!</span></h2>
+          <p>
+            I am passionately curious about many things, which is simultaneously
+            a blessing and a curse. In 2023 (10 years into my professional
+            career), I committed to undertaking a significant career change -
+            something that I had been seeking for many years.
+          </p>
+          <p>
+            I'm currently a part-time web development student at Coder Academy
+            and will be seeking a new role as a <span>web developer</span> in
+            2024.
+          </p>
+          <p>
+            My career to date has been heavily in the tech industry, though in a
+            variety of non-technical roles - from customer support, through to
+            accounting and human resources. I have often been the "systems guru"
+            within my non-technical teams.
+          </p>
+          <p>
+            Outside of work, I am incredibly passionate about sports. I am an
+            avid ultimate frisbee athlete and volunteer, currently serving as a
+            Director for the Australian Flying Disc Association.
+          </p>
+          <p>I live in Naarm (Melbourne) with my ginger cat, Bonnie.</p>
+          <!-- the below button will open a new tab with a copy of my PDF resume which the user can view or download -->
+          <button onclick="window.open('images/Resume.pdf','_blank')">
+            Resume
+          </button>
+        </div>
+      </div>
+      <div class="skills-values-exp">
+        <!-- there are a number of div layers here to assist with the various flexbox views applied in css -->
+        <div class="skills-values">
+          <div class="skills">
+            <h3>TECHNICAL SKILLS</h3>
+            <ul>
+              <li>
+                <div class="sub">Web Fundamentals</div>
+                <p>
+                  Markdown<br />
+                  HTML<br />
+                  CSS and Sass<br />
+                  Git<br />
+                  Wireframing
+                </p>
+              </li>
+              <li>
+                <div class="sub">Front End</div>
+                <p>
+                  JavaScript*<br />
+                  Python
+                </p>
+              </li>
+              <li>
+                <div class="sub">Back End</div>
+                <p>
+                  Node.js*<br />
+                  Flask
+                </p>
+              </li>
+            </ul>
+            <em>*learning in progress</em>
+          </div>
+          <div class="values">
+            <h3>PERSONAL VALUES</h3>
+            <ul>
+              <li class="sub">Communication</li>
+              <li class="sub">Honesty</li>
+              <li class="sub">Empathy</li>
+              <li class="sub">Respect</li>
+              <li class="sub">Trust</li>
+              <li class="sub">Diversity and inclusion for all</li>
+            </ul>
+          </div>
+        </div>
+        <div class="exp">
+          <!-- showing at a high level my education and work experience as an adult so that users don't have to download my resume to see this -->
+          <div class="education">
+            <h3>EDUCATION</h3>
+            <ul>
+              <li>
+                <div class="sub">2023</div>
+                <p>Diploma of IT (Web Development Bootcamp) @ Coder Academy</p>
+              </li>
+              <li>
+                <div class="sub">2020 - 2021</div>
+                <p>Diploma of Human Resources @ Accredited Online Training</p>
+              </li>
+              <li>
+                <div class="sub">2011 - 2013</div>
+                <p>
+                  Bachelor of Commerce (Accounting) @ Victoria University of
+                  Wellington
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="work">
+            <h3>PROFESSIONAL EXPERIENCE</h3>
+            <ul>
+              <li>
+                <div class="sub">2022 - Present</div>
+                <p>People Operations Specialist @ mx51</p>
+              </li>
+              <li>
+                <div class="sub">2021 - 2022</div>
+                <p>Business Operations Coordinator @ mx51</p>
+              </li>
+              <li>
+                <div class="sub">2019 - 2021</div>
+                <p>Assistant Accountant @ mx51</p>
+              </li>
+              <li>
+                <div class="sub">2017 - 2019</div>
+                <p>Finance and Operations Manager @ SA1NT</p>
+              </li>
+              <li>
+                <div class="sub">2016 - 2017</div>
+                <p>Cloud Integration Specialist @ Pitcher Partners</p>
+              </li>
+              <li>
+                <div class="sub">2016</div>
+                <p>Senior Customer Experience Specialist @ Xero</p>
+              </li>
+              <li>
+                <div class="sub">2012 - 2016</div>
+                <p>Customer Experience Specialist @ Xero</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>Fueled by ☕ (Katie Lock 2023)</footer>
+  </body>
+</html>

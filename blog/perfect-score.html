@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Katie Lock | My first Perfect Score</title>
+    <link rel="icon" href="../images/favicon.png" />
+    <!-- linking external css specific to this page -->
+    <link rel="stylesheet" href="../styles/pages/blog-post.css" />
+    <!-- importing google fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Assistant|Sora"
+    />
+    <!-- linking javascript file for making mobile menu operate -->
+    <script src="../scripts/scripts.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="home">
+        <!-- top left-hand side of header for logo and name -->
+        <a href="../index.html"
+          ><img
+            class="logo"
+            alt="icon of the letter k"
+            src="../images/logo.png"
+        /></a>
+        <p class="name">katie lock</p>
+      </div>
+      <nav class="navigation">
+        <!-- top right-hand side of header with navigation menu, css used to switch between mobile hamburger menu and desktop horizontal menu -->
+        <button class="menuButton">
+          <img
+            src="../images/hamburger-menu.png"
+            class="hamburgericon"
+            onclick="toggleMobileNav()"
+          />
+        </button>
+        <div id="mobile-nav" class="mobile-closed">
+          <button
+            class="navlink"
+            onclick="window.location.href='../about.html';"
+          >
+            about
+          </button>
+          <button
+            class="navlink"
+            onclick="window.location.href='../portfolio.html';"
+          >
+            portfolio
+          </button>
+          <button
+            class="navlink"
+            onclick="window.location.href='../blog.html';"
+          >
+            blog
+          </button>
+          <button
+            class="navlink"
+            onclick="window.location.href='../contact.html';"
+          >
+            contact
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="blog-image">
+        <img alt="100% on a chalkboard" src="../images/100.png" />
+      </div>
+      <article>
+        <h1>The overachiever's delight: my first Perfect Score</h1>
+        <h3>22 May 2023</h3>
+        <p>
+          Whilst in Sydney on a work trip last week, I had this gut feeling
+          while fetching a coffee that I should check my Coder Academy emails...
+          just in case. And when I logged in, I didn't believe my eyes. A
+          perfect score... my first ever perfect score.
+        </p>
+        <p>
+          To set the scene, a mere few weeks ago I was feeling incredibly
+          stressed. I didn't feel like I <em>got</em> Python, at least to the
+          level that I needed for this final assignment of the term. And heck,
+          even my friend who is a Head of Data at a tech company was telling me
+          that my app idea was ambitious, and that if I tried his app idea
+          instead I could have punched it out in a day.
+        </p>
+        <p>
+          Eventually my app was working, I had built all my features! The final
+          hurdle was testing... and boy oh boy, was it a wake-up call. Either my
+          tests were failing, or I couldn't even begin to write a test for a
+          function because of everything else going on inside it.
+        </p>
+
+        <p>
+          I take Friday off work to put my head down and get these tests
+          working. I spent hours glued to my computer and feel like I'm getting
+          nowhere. I pluck up the courage to ask for help on Discord, and the
+          response only discourages me further. Just over 48 hours until the
+          submission is due and I feel defeated. I go to the gym and out for
+          dinner with some friends, and reassure myself that tomorrow is a new
+          day.
+        </p>
+        <p>
+          On Saturday, something clicks. I manage to process the advice I
+          received on Discord and with a clear head have the realisation - my
+          code may be DRY and my app may be functional, but these functions are
+          simply <em>TOO BIG!</em> And so the great refactor begins... I tear
+          apart every function into anywhere from 2-5 new functions. I create
+          another class so I can retain and set a few key variables between the
+          different functions. And then over the course of about 8 hours, I
+          manage to go from 2 basic test cases to 7 tests, most with multiple
+          cases. It's working, I'm getting it!
+        </p>
+        <p>
+          The next morning, I wake with purpose - it's the final stretch. Time
+          to smash out my documentation and call it a day. I even get to enjoy a
+          few hours out with my friends in the afternoon, which felt delightful
+          after being glued to my computer for the previous 2 days. I proudly
+          submit, knowing I've comfortably covered the requirements - but
+          accepting that there is always room for improvement.
+        </p>
+        <p>
+          The term break came at a perfect time, as I had a work trip to Sydney
+          which I knew would be a challenge to balance with study. I check my
+          student emails on Monday afternoon before my trip - nothing new. I
+          don't keep these emails logged in on my phone, and I'm not really
+          expecting to get my marks back until I return to Melbourne anyway. But
+          on that brisk Wednesday morning before a busy day with my team, my gut
+          tells me to login. And there I see the email - "Assignment Marked". I
+          hold my breath as I click the link to login to our student platform.
+          All I want is an HD, just an HD please...
+        </p>
+        <p>
+          100.5/100.5 - there it is. I'm shocked and think my eyes are fooling
+          me so I click into the details and scroll, expecting to see
+          constructive feedback. Instead, I see every HD section in the rubric
+          highlighted, without a single point deducted. I'm speechless!
+          Naturally, I message my Head of Data friend just to tell him that my
+          ambitious idea worked.
+        </p>
+        <p>
+          Does this mean that I love Python and really want to focus my career
+          on that? Honestly, it feels too soon to say. But this assignment
+          taught me that in a world where you're planning an idea and all its
+          features while also being the one to do all the coding and testing -
+          go with what you know and/or love. My idea was ambitious but it was
+          much easier to visualise because I was inspired by my sport and an
+          existing website. In reality unless you're a one-person-band - you'll
+          have Product Managers planning your features, Project Managers
+          organising your deliverables, Team Leads to help plan increments and
+          assign tickets... I won't have to do it all, and that's the way I like
+          it.
+        </p>
+      </article>
+      <button onclick="window.location.href='../blog.html';">
+        Back to all posts →
+      </button>
+    </main>
+    <footer>Fueled by ☕ (Katie Lock 2023)</footer>
+  </body>
+</html>

@@ -1,0 +1,285 @@
+/* Purpose: the scss file for any variations unique to individual portfolio posts */
+/* Styling for header and navbar */
+header {
+  height: 12vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+header .logo {
+  margin-left: 10px;
+  height: 50px;
+  width: 50px;
+  transition: 0.7s;
+}
+header .logo:hover {
+  /* animates the logo with a rotation upon hover */
+  opacity: 50%;
+  transform: rotate(35deg);
+}
+header .name {
+  display: none;
+  /* this div will be hidden on smaller screens and styled below ready for larger screens */
+  flex-direction: row;
+  font-family: "Sora", serif;
+  font-size: 1.5rem;
+  padding-left: 20px;
+  position: relative;
+  top: -10px;
+}
+header nav {
+  width: 40vw;
+  margin-right: 20px;
+  /* styling for text in navifation bar */
+  font-family: "Sora", serif;
+  color: #3C493F;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+header nav .navlink {
+  /* styling for text in navifation bar */
+  font-family: "Sora", serif;
+  color: #3C493F;
+  text-decoration: none;
+  font-size: 1.3rem;
+  transition-duration: 0.5s;
+  width: 100%;
+  padding: 15px 0;
+  margin: auto;
+  text-align: center;
+  border: none;
+  border-radius: 20px;
+  background-color: transparent;
+}
+header nav .navlink:hover {
+  /* background of a menu option changes when hovered over */
+  background-color: #A2E3C4;
+  cursor: pointer;
+  opacity: 70%;
+}
+header nav .menuButton {
+  display: flex;
+  background: transparent;
+  border: none;
+  /* ensures this button sits above other elements */
+  z-index: 100;
+  margin: auto;
+  width: 100%;
+}
+header nav .menuButton .hamburgericon {
+  max-width: 50px;
+  width: 100%;
+  margin: auto;
+}
+header nav .menuButton .hamburgericon:hover {
+  /* opacity fade and change in cursor upon hover to indicate clicking will provide an action */
+  opacity: 50%;
+  cursor: pointer;
+}
+header nav .mobile-closed {
+  /* hides the drop-down menu by default upon load */
+  display: none;
+  background-color: #7E8D85;
+  opacity: 90%;
+  border-radius: 20px;
+  width: 40vw;
+}
+header nav .show {
+  /* JS changes the class to this for menu when the menu button is clicked, this section specifies how it'll be displayed/positioned once shown */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+}
+
+/* changes for tablet-sized screens and above */
+@media screen and (min-width: 768px) {
+  header .name {
+    /* displays name next to logo once this width is reached */
+    display: inline-flex;
+  }
+  header nav {
+    /* adjusting width of mobile menu in relation to vw since screen size is now larger */
+    width: 25vw;
+  }
+  header nav .mobile-closed {
+    width: 25vw;
+  }
+}
+/* changes for computer-sized screens and above */
+@media screen and (min-width: 992px) {
+  header nav {
+    width: 30vw;
+  }
+  header nav .menuButton {
+    /* hides the hamburger menu button now that nav links are horizontal */
+    display: none;
+  }
+  header nav .mobile-closed {
+    /* adjusts the nav bar to display horizontally */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: transparent;
+  }
+  header nav .navlink {
+    padding: 15px;
+    background-color: transparent;
+  }
+  header nav .navlink:hover {
+    /* animates the nav links when hovered */
+    transform: translate(0, -5px);
+  }
+}
+/* changes for larger computer-sized screens and above */
+@media screen and (min-width: 1200px) {
+  header nav .mobile-closed {
+    /* adjusting right-side margin for even larger screens to have nav menu closer to screen edge */
+    margin-right: 2vw;
+  }
+}
+/* changes for even larger computer-sized screens and above */
+@media screen and (min-width: 1400px) {
+  header nav .mobile-closed {
+    /* adjusting right-side margin for even larger screens to have nav menu closer to screen edge */
+    margin-right: auto;
+  }
+}
+body footer {
+  /* to keep footer text at bottom of page regardless of length of content */
+  position: absolute;
+  bottom: 0.3rem;
+  /* styling of text in footer */
+  width: 98%;
+  font-size: 0.7rem;
+  font-style: italic;
+  text-align: right;
+}
+
+/* Commence scss styling */
+body {
+  /* setting basic default styling for body elements */
+  background-color: #F0F7F4;
+  font-family: "Sora", serif;
+  color: #3C493F;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* ensures background color stretches entire vh even if content doesn't fill page */
+  min-height: 100vh;
+  /* required for the fade-in keyframe below */
+  animation-name: fade;
+  animation-duration: 1.5s;
+  /* help keep footer text at bottom of all pages (when used in conjuction with _footer.scss */
+  position: relative;
+}
+body main {
+  padding-bottom: 2.5rem;
+}
+
+p {
+  /* setting standard size for p elements */
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+}
+
+@keyframes fade {
+  /* fades-in html content on page upon load */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Commence scss styling */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  /* this class is only used to contain a div if there are two buttons rather than just one at the bottom of a portfolio post*/
+}
+main .portfolio-image {
+  align-items: center;
+  width: 90vw;
+}
+main .portfolio-image img {
+  display: block;
+  margin: auto;
+  width: clamp(250px, 90%, 400px);
+  border: 3px solid #3C493F;
+  box-shadow: 10px 10px #B3BFB8;
+}
+main article {
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+}
+main article h1 {
+  display: block;
+  text-align: left;
+  font-size: 2rem;
+  margin-top: 30px;
+  margin-bottom: -5px;
+}
+main article h4 {
+  margin-bottom: -5px;
+  font-weight: bold;
+  color: #7E8D85;
+}
+main article p {
+  margin-bottom: -2px;
+}
+main article p a {
+  color: #7E8D85;
+}
+main article ul {
+  margin-bottom: -5px;
+  font-size: 0.9rem;
+}
+main .buttons {
+  margin-top: 20px;
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+main button {
+  display: block;
+  margin: auto;
+  width: clamp(100px, 45%, 220px);
+  /* styling for the main button used across the site */
+  background-color: #7E8D85;
+  border: none;
+  box-shadow: 5px 5px #B3BFB8;
+  color: #A2E3C4;
+  padding: 10px;
+  text-align: center;
+  font-family: "Sora", serif;
+  font-size: 20px;
+  transition: 0.5s;
+}
+main button:hover {
+  /* hover behaviour for the above button */
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+/* changes for tablet-sized screens and above */
+@media screen and (min-width: 768px) {
+  main {
+    /* adjusting width and image sizes for larger screens */
+  }
+  main .portfolio-image {
+    width: 80vw;
+  }
+  main .portfolio-image img {
+    width: clamp(400px, 100%, 650px);
+  }
+  main article {
+    width: 80vw;
+  }
+}/*# sourceMappingURL=portfolio-post.css.map */

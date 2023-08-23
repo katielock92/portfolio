@@ -1,0 +1,108 @@
+/* Purpose: the scss file for any variations unique to blog.html */
+
+@import "../index";
+
+/* Commence scss styling */
+
+main {
+  h1 {
+    @include page-head();
+    @include keywords();
+  }
+
+  h3 {
+    margin-top: -15px;
+    margin-bottom: -5px;
+    color: $color5;
+  }
+
+  /* image not displayed on mobile view - this is added and styled for larger screens below */
+  .blog-image {
+    display: none;
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    padding: 2%;
+    /* as there is no image for each blog post preview, a line is used to visually separate each post preview */
+    border-bottom: 2px solid $color2;
+  }
+
+  button {
+    width: 180px;
+    @include square-button();
+    margin-bottom: 20px;
+  }
+
+  button:hover {
+    @include button-hover();
+  }
+}
+
+/* changes for tablet-sized screens and above */
+
+@media screen and (min-width: $medium) {
+  main {
+    .post {
+      /* layout will now have a row for each post with the image inline */
+      @include flex-row-center();
+      margin: 20px;
+    }
+
+    .blog-image {
+     @include inline-flex-row();
+      width: 45%;
+      padding-top: 30px;
+      
+
+      img {
+        width: clamp(250px, 80%, 450px);
+        @include shadow-10();
+        border: 3px solid $color1;
+      }
+    }
+
+    button {
+      margin-bottom: 0;
+    }
+
+    article {
+      display: inline-flex;
+      justify-content: flex-start;
+      padding: 0;
+      margin: 20px 0;
+      width: 45%;
+      border: none;
+    }
+
+    /* classifying each post preview as left or right to assist in creating a consistent margin down the middle of the page */
+    .left {
+      margin-right: 3vw;
+    }
+    .right {
+      margin-left: 3vw;
+    }
+  }
+}
+
+/* changes for computer-sized screens and above */
+
+@media screen and (min-width: $large) {
+  main {
+    width: 80vw;
+    display: block;
+    margin: auto;
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    .blog-image {
+      img {
+        width: clamp(300px, 80%, 600px);
+      }
+    }
+  }
+}

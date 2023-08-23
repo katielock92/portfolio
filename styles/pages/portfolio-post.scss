@@ -1,0 +1,97 @@
+/* Purpose: the scss file for any variations unique to individual portfolio posts */
+
+@import "../index";
+
+/* Commence scss styling */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+
+  .portfolio-image {
+    align-items: center;
+    width: 90vw;
+
+    img {
+      display: block;
+      margin: auto;
+      width: clamp(250px, 90%, 400px);
+      border: 3px solid $color1;
+      box-shadow: 10px 10px $color3;
+    }
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+
+    h1 {
+      display: block;
+      text-align: left;
+      font-size: 2rem;
+      margin-top: 30px;
+      margin-bottom: -5px;
+    }
+
+    h4 {
+      margin-bottom: -5px;
+      font-weight: bold;
+      color: $color2;
+    }
+
+    p {
+      margin-bottom: -2px;
+      a {
+        color: $color2;
+      }
+    }
+
+    ul {
+      margin-bottom: -5px;
+      font-size: 0.9rem;
+    }
+
+  }
+
+  /* this class is only used to contain a div if there are two buttons rather than just one at the bottom of a portfolio post*/
+  .buttons {
+    margin-top: 20px;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  button {
+    display: block;
+    margin: auto;
+    width: clamp(100px, 45%, 220px);
+    @include square-button();
+  }
+
+  button:hover {
+    @include button-hover();
+  }
+}
+
+/* changes for tablet-sized screens and above */
+
+@media screen and (min-width: $medium) {
+  main {
+    /* adjusting width and image sizes for larger screens */
+    .portfolio-image {
+      width: 80vw;
+
+      img {
+        width: clamp(400px, 100%, 650px);
+      }
+    }
+
+    article {
+      width: 80vw;
+    }
+  }
+}

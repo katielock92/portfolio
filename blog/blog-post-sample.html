@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Katie Lock | Sample Blog Post</title>
+  <link rel="icon" href="../images/favicon.png">
+  <!-- linking external css specific to this page -->
+  <link rel="stylesheet" href="../styles/pages/blog-post.css" />
+  <!-- importing google fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Assistant|Sora" />
+  <!-- linking javascript file for making mobile menu operate -->
+  <script src="../scripts/scripts.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="home">
+      <!-- top left-hand side of header for logo and name -->
+      <a href="../index.html"><img class="logo" alt="icon of the letter k" src="../images/logo.png" /></a>
+      <p class="name">katie lock</p>
+    </div>
+    <nav class="navigation">
+      <!-- top right-hand side of header with navigation menu, css used to switch between mobile hamburger menu and desktop horizontal menu -->
+      <button class="menuButton">
+        <img src="../images/hamburger-menu.png" class="hamburgericon" onclick="toggleMobileNav()" />
+      </button>
+      <div id="mobile-nav" class="mobile-closed">
+        <button class="navlink" onclick="window.location.href='../about.html';">about</button>
+        <button class="navlink" onclick="window.location.href='../portfolio.html';">portfolio</button>
+        <button class="navlink" onclick="window.location.href='../blog.html';">blog</button>
+        <button class="navlink" onclick="window.location.href='../contact.html';">contact</button>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="blog-image">
+      <img alt="placeholder image" src="../images/placeholder-image.png" />
+    </div>
+    <article>
+      <h1>Blog title</h1>
+      <h3>1 April 2023</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Auctor
+        urna nunc id cursus metus. Sed felis eget velit aliquet sagittis. A
+        iaculis at erat pellentesque adipiscing. Sit amet mattis vulputate
+        enim. Semper risus in hendrerit gravida rutrum quisque non. Tellus at
+        urna condimentum mattis pellentesque id. Blandit massa enim nec dui
+        nunc mattis. Aliquet eget sit amet tellus. Feugiat in ante metus
+        dictum. Tincidunt eget nullam non nisi est sit. Quam vulputate
+        dignissim suspendisse in est ante in nibh.
+      </p>
+      <p>
+        Pharetra vel turpis nunc eget lorem dolor sed viverra. Lobortis mattis
+        aliquam faucibus purus. Amet facilisis magna etiam tempor orci eu
+        lobortis. In mollis nunc sed id semper risus in hendrerit gravida.
+        Gravida quis blandit turpis cursus in hac habitasse platea. Malesuada
+        pellentesque elit eget gravida cum sociis natoque. Lectus quam id leo
+        in vitae turpis massa. Nec sagittis aliquam malesuada bibendum arcu
+        vitae elementum. Mattis nunc sed blandit libero volutpat sed cras
+        ornare. Venenatis lectus magna fringilla urna porttitor. Interdum
+        varius sit amet mattis vulputate enim nulla aliquet. Cursus mattis
+        molestie a iaculis at erat pellentesque adipiscing commodo. Quis
+        viverra nibh cras pulvinar mattis nunc. Ac placerat vestibulum lectus
+        mauris ultrices eros in cursus turpis. Egestas diam in arcu cursus.
+        Libero enim sed faucibus turpis in eu. Donec pretium vulputate sapien
+        nec sagittis aliquam malesuada bibendum. Sollicitudin ac orci
+        phasellus egestas tellus rutrum tellus. Id diam vel quam elementum
+        pulvinar.
+      </p>
+      <p>
+        Cras pulvinar mattis nunc sed blandit libero volutpat. Nec ullamcorper
+        sit amet risus nullam eget felis eget nunc. Mauris ultrices eros in
+        cursus turpis. Nisl pretium fusce id velit. Egestas integer eget
+        aliquet nibh praesent tristique magna sit. Feugiat nibh sed pulvinar
+        proin gravida. Mattis pellentesque id nibh tortor id aliquet. Hac
+        habitasse platea dictumst quisque sagittis. Arcu odio ut sem nulla.
+        Lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi
+        tincidunt ornare. Metus aliquam eleifend mi in. Arcu cursus vitae
+        congue mauris. Bibendum at varius vel pharetra vel turpis.
+      </p>
+      <p>
+        Pellentesque sit amet porttitor eget. Leo duis ut diam quam nulla
+        porttitor massa. Tellus id interdum velit laoreet id donec ultrices.
+        Sit amet consectetur adipiscing elit duis tristique sollicitudin nibh
+        sit. Et odio pellentesque diam volutpat. Senectus et netus et
+        malesuada fames ac. Ipsum suspendisse ultrices gravida dictum fusce ut
+        placerat orci nulla. Habitasse platea dictumst quisque sagittis purus
+        sit amet. Ligula ullamcorper malesuada proin libero nunc consequat
+        interdum varius. Venenatis cras sed felis eget. Nam at lectus urna
+        duis convallis. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper
+        sit amet. Mattis molestie a iaculis at erat pellentesque adipiscing
+        commodo. Sit amet nisl suscipit adipiscing bibendum est ultricies.
+      </p>
+    </article>
+    <button onclick="window.location.href='../blog.html';">Back to all posts →</button>
+  </main>
+  <footer>
+    Fueled by ☕ (Katie Lock 2023)
+  </footer>
+</body>
+
+</html>

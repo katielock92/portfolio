@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Katie Lock | Blog</title>
+    <link rel="icon" href="images/favicon.png" />
+    <!-- linking external css specific to this page -->
+    <link rel="stylesheet" href="styles/pages/blog.css" />
+    <!-- importing google fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Assistant|Sora"
+    />
+    <!-- linking javascript file for making mobile menu operate -->
+    <script src="scripts/scripts.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="home">
+        <!-- top left-hand side of header for logo and name -->
+        <a href="index.html"
+          ><img
+            class="logo"
+            alt="icon of the letter k"
+            src="images/logo.png"
+        /></a>
+        <p class="name">katie lock</p>
+      </div>
+      <nav class="navigation">
+        <!-- top right-hand side of header with navigation menu, css used to switch between mobile hamburger menu and desktop horizontal menu -->
+        <button class="menuButton">
+          <img
+            src="images/hamburger-menu.png"
+            class="hamburgericon"
+            onclick="toggleMobileNav()"
+          />
+        </button>
+        <div id="mobile-nav" class="mobile-closed">
+          <button
+            class="navlink"
+            onclick="window.location.href='about.html';"
+          >
+            about
+          </button>
+          <button
+            class="navlink"
+            onclick="window.location.href='portfolio.html';"
+          >
+            portfolio
+          </button>
+          <button
+            class="navlink"
+            onclick="window.location.href='blog.html';"
+          >
+            blog
+          </button>
+          <button
+            class="navlink"
+            onclick="window.location.href='contact.html';"
+          >
+            contact
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h1><span>katie's</span> blog</h1>
+      <div class="post">
+        <article class="left">
+          <h2>The overachiever's delight: my first Perfect Score</h2>
+          <h3>22 May 2023</h3>
+          <p>
+            Whilst in Sydney on a work trip last week, I had this gut feeling
+            while fetching a coffee that I should check my Coder Academy
+            emails... just in case. And when I logged in, I didn't believe my
+            eyes. A perfect score... my first ever perfect score.
+          </p>
+          <button onclick="window.location.href='blog/perfect-score.html';">
+            Read more →
+          </button>
+        </article>
+        <aside class="blog-image">
+          <img alt="100% on a chalkboard" src="images/100.png" />
+        </aside>
+      </div>
+
+      <div class="post">
+        <aside class="blog-image">
+          <img
+            alt="woman's hands typing on a computer"
+            src="images/woman-typing.png"
+          />
+        </aside>
+        <article class="right">
+          <h2>Retrospective - my first Coder Academy assignment</h2>
+          <h3>13 April 2023</h3>
+          <p>
+            It's done. My first assignment. Mixed emotions: relief,
+            satisfaction, pride, frustration, stress - it's all there.
+          </p>
+          <button
+            onclick="window.location.href='blog/retro-first-assignment.html';"
+          >
+            Read more →
+          </button>
+        </article>
+      </div>
+      <div class="post">
+        <article class="left">
+          <h2>Growing up with tech - the millennial experience</h2>
+          <h3>29 March 2023</h3>
+          <p>
+            I was born in 1992, which firmly places me as a millennial despite a
+            few pieces of Gen Z lingo occasionally slipping into my vocabulary.
+            My exact year of birth however places me into a rare stage where
+            only those who were born within a mere few years either side of me
+            had the exact same technology at pivotal moments of their
+            adolescence.
+          </p>
+          <button
+            onclick="window.location.href='blog/growing-up-with-tech.html';"
+          >
+            Read more →
+          </button>
+        </article>
+        <aside class="blog-image">
+          <img
+            alt="90s child using a computer"
+            src="images/computer-room.png"
+          />
+        </aside>
+      </div>
+      <!-- placeholder blog posts being used for now until content is created, directing to a sample template page -->
+      <div class="post">
+        <aside class="blog-image">
+          <img
+            alt="a drawing of a brain with the letters ADHD"
+            src="images/ADHD.png"
+          />
+        </aside>
+        <article class="right">
+          <h2>How a late ADHD diagnosis changed my approach to my career</h2>
+          <h3>1 April 2023</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <button onclick="window.location.href='blog/blog-post-sample.html';">
+            Read more →
+          </button>
+        </article>
+      </div>
+      <div class="post">
+        <article class="left">
+          <h2>My ultimate (frisbee) addiction</h2>
+          <h3>1 April 2023</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <button onclick="window.location.href='blog/blog-post-sample.html';">
+            Read more →
+          </button>
+        </article>
+        <aside class="blog-image">
+          <img
+            alt="a blonde woman has caught a frisbee while opponents look on"
+            src="images/endzone.png"
+          />
+        </aside>
+      </div>
+      <div class="post">
+        <aside class="blog-image" class="left">
+          <img
+            alt="a red-haired woman sits in front of a computer displaying code"
+            src="images/woman-coding.png"
+          />
+        </aside>
+        <article class="right">
+          <h2>Opinion: how most coding bootcamps can gatekeep diversity</h2>
+          <h3>1 April 2023</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <button onclick="window.location.href='blog/blog-post-sample.html';">
+            Read more →
+          </button>
+        </article>
+      </div>
+    </main>
+    <footer>Fueled by ☕ (Katie Lock 2023)</footer>
+  </body>
+</html>
