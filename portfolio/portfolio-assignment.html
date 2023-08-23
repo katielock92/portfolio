@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Katie Lock | Portfolio Assignment</title>
+    <link rel="icon" href="../images/favicon.png" />
+    <!-- linking external css specific to this page -->
+    <link rel="stylesheet" href="../styles/pages/portfolio-post.css" />
+    <!-- importing google fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Assistant|Sora"
+    />
+    <!-- linking javascript file for making mobile menu operate -->
+    <script src="../scripts/scripts.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="home">
+        <!-- top left hand side of header for logo and name -->
+        <a href="../index.html"
+          ><img
+            class="logo"
+            alt="icon of the letter k"
+            src="../images/logo.png"
+        /></a>
+        <p class="name">katie lock</p>
+      </div>
+      <nav class="navigation">
+        <!-- top right-hand side of header with navigation menu, css used to switch between mobile hamburger menu and desktop horizontal menu -->
+        <button class="menuButton">
+          <img
+            src="../images/hamburger-menu.png"
+            class="hamburgericon"
+            onclick="toggleMobileNav()"
+          />
+        </button>
+        <div id="mobile-nav" class="mobile-closed">
+          <button
+            class="navlink"
+            onclick="window.location.href='../about.html';"
+          >
+            about
+          </button>
+          <button
+            class="navlink"
+            onclick="window.location.href='../portfolio.html';"
+          >
+            portfolio
+          </button>
+          <button
+            class="navlink"
+            onclick="window.location.href='../blog.html';"
+          >
+            blog
+          </button>
+          <button
+            class="navlink"
+            onclick="window.location.href='../contact.html';"
+          >
+            contact
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="portfolio-image">
+        <img
+          alt="a screenshot of the home page of this very portfolio website"
+          src="../images/portfolio_screenshot.png"
+        />
+      </div>
+      <article>
+        <h1>Portfolio Website</h1>
+        <h4><em>March-April 2023</em></h4>
+        <h4>About</h4>
+        <p>
+          For my first assignment as part of my Coder Academy bootcamp, I was
+          tasked with creating a personal portfolio website from scratch using
+          the skills that we had learnt in our first month of the course. I had
+          a slight advantage in this assignment, due to the fact that
+          scholarship submission was a very similar website. However I knew to
+          do the assignment justice, I did have to build something new from
+          scratch - though I was able to leverage some coding components, and
+          adjust accordingly.
+        </p>
+        <p>
+          The brief for this assignment specified a minimum number of HTML
+          pages, textual components and graphical components that needed to
+          demonstrate our skills, experience and personality. The site also
+          needed to have a responsive design built using CSS flexbox or grid,
+          and include a navigation menu/bar.
+        </p>
+        <p>
+          In addition to building and deploying this website, a thorough
+          README.md was required to be created, along with a slide deck and
+          presentation summarising our experience building this site.
+        </p>
+        <h4>Skills and technologies used:</h4>
+        <ul>
+          <li>Markdown</li>
+          <li>Figma</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>VS Code</li>
+          <li>GitHub</li>
+          <li>Cloudflare</li>
+        </ul>
+      </article>
+      <div class="buttons">
+        <button onclick="window.location.href='../portfolio.html';">
+          Back to portfolio →
+        </button>
+      </div>
+    </main>
+    <footer>Fueled by ☕ (Katie Lock 2023)</footer>
+  </body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald|Just Me Again Down Here|Barlow">
+    <link rel="icon" href="images/computer-icon.png">
+    <script src="script.js"></script>
+    <title>Ultimate Frisbee and Me</title>
+</head>
+
+<body class="fade">
+    <header>
+        <div class="header">
+            <div><a href="index.html"><img src="images/computer-icon.png" class="imac"></a></div>
+            <nav class="navigation">
+                <button class="menuButton"><img src="images/hamburger-menu.png" class="hamburgericon" onclick="toggleMobileNav()"></button>
+                <div id="mobile-nav" class="mobile-closed"><ul class="navBar">
+                    <li class="navItem"><a href="about-me.html" class="navItem">About Me</a></li>
+                    <li class="navItem"><a href="diversity.html" class="navItem">Diversity in Tech</a></li>
+                    <li class="navItem"><a href="ultimate-frisbee.html" class="navItem">Ultimate Frisbee</a></li>
+                </ul></div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1>How can frisbee be "ultimate"?</h1>
+        <div class="flex-container">
+        <div><section><iframe class="youtube" src="https://www.youtube.com/embed/KMePNaSOfcw" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe></section></div>
+        <div class="fris"><p>Outside of work and attempting to learn how to code, my biggest passion (and time suck) is ultimate frisbee.
+            I don't think I can provide a better explaination than the above video, so give it a watch if you haven't
+            already.</p>
+        <p>I've been lucky enough to not only travel all around Australia for the sport, but travel to New Zealand,
+            Japan, China, the Philippines and USA. In addition to being a (mediocre) player of the sport, I've been a
+            club treasurer, a team manager, a commentator, and most recently - a director of Australian Flying Disc
+            Association.</p>
+        <p>The things that I love the most about ultimate is the community, the endorphins that exercise gives me, and
+            the <a href="https://wfdf.sport/spirit-of-the-game/">Spirit of the Game</a>.</p></div></div>
+        <p class="highlights">Here's a little glimpse of what my life in Ultimate looks like:</p>
+
+        <div class="slideshow-container">
+            <div class="slides fade" style="display:block">
+              <img class="slideshow-photo" src="images/VUC.jpg">
+              <div class="slide-caption">Victorian Ultimate Championships 2022</div>
+            </div>
+
+            <div class="slides fade">
+                <img class="slideshow-photo" src="images/AOBUC.jpeg">
+                <div class="slide-caption">Team Manager at the 2019 Asia-Oceanic Ultimate Beach Championships in Japan</div>
+              </div>
+          
+            <div class="slides fade">
+              <img class="slideshow-photo" src="images/MUF1.JPG">
+              <div class="slide-caption">MUF Women's Tournament 2022</div>
+            </div>
+          
+            <div class="slides fade">
+              <img class="slideshow-photo" src="images/WUCC.jpg">
+              <div class="slide-caption">Representing Newcastle Pie Wagon at the 2022 World Ultimate Club Championships in Ohio</div>
+            </div>
+
+            <div class="slides fade">
+                <img class="slideshow-photo" src="images/MUF2018.jpg">
+                <div class="slide-caption">MUF Women's Tournament 2018</div>
+              </div>
+
+              <div class="slides fade">
+                <img class="slideshow-photo" src="images/Manila Spirits.jpeg">
+                <div class="slide-caption">Making friends from all over the world playing for Staked Stats at Manila Spirits 2019</div>
+              </div>
+
+              <div class="slides fade">
+                <img class="slideshow-photo" src="images/Divine.jpg">
+                <div class="slide-caption">Training with my new club, Divine</div>
+              </div>
+
+              <div class="slides fade">
+                <img class="slideshow-photo" src="images/PHat.jpg">
+                <div class="slide-caption">Beach tournament in rural New Zealand</div>
+              </div>
+
+              <div class="slides fade">
+                <img class="slideshow-photo" src="images/Muf2.JPG">
+                <div class="slide-caption">MUF Women's Tournament 2022</div>
+              </div>
+          
+            <a class="prev" onclick="plusIndex(-1)">&#10094;</a>
+            <a class="next" onclick="plusIndex(+1)">&#10095;</a>
+            <div class="dots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>
+                <span class="dot" onclick="currentSlide(8)"></span>
+                <span class="dot" onclick="currentSlide(9)"></span>
+              </div>
+          </div>
+
+
+    </main>
+    <footer class="footer">
+        <p>This website was developed in Naarm (Melbourne) on the unceded lands of the Wurundjeri people. Always was,
+            always will be.</p>
+            <p><a href="https://www.linkedin.com/in/katielock92/"><img src="images/linkedin.png" class="logos" alt="LinkedIn logo"></a><a
+                href="https://github.com/katielock92"><img src="images/github.png" class="logos" alt="GitHub logo"></a></p>
+    </footer>
+</body>
+
+</html>

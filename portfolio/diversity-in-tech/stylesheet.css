@@ -1,0 +1,482 @@
+html {
+    background-image: linear-gradient(to bottom right, #FFDDDE, #FFECE2);
+    display: flex;
+    font-family: 'Barlow';
+    color: #BF4C41;
+    font-size: 16px;
+}
+
+/* styling for menu bar from here to next comment */
+.header {
+    display: inline-flex;
+    flex-direction: row;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.imac {
+    width: 150px;
+    display: inline-flex;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.imac:hover {
+    opacity: 50%;
+}
+
+.navigation {
+    margin-top: 40px;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+ul.navBar {
+    list-style-type: none;
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.menuButton {
+    display: none;
+    background: transparent;
+    border: none !important;
+    z-index: 100;
+    margin: auto;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.hamburgericon {
+    max-width: 50px;
+    width: 100%;
+    margin: auto;
+}
+
+.hamburgericon:hover {
+    opacity: 50%;
+    cursor: pointer;
+}
+
+a.navItem {
+    padding: 8px 16px;
+    text-decoration: none;
+    text-align: center;
+    color: #FFECE2;
+    background-color: #BF4C41;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+a.navItem:hover {
+    background-color: #ffffff;
+    color: #BF4C41;
+}
+
+.navItem {
+    border-radius: 20px;
+}
+
+/* end of heading bar styling */
+
+/* styling for main across all pages */
+
+body {
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 80px;
+    margin: auto 0 auto 0;
+}
+
+main {
+    margin-top: 2.5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+}
+
+.flex-container {
+    display: inline-flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.content {
+    flex-direction: row;
+    width: 100%;
+    max-width: 600px;
+    min-width: 350px;
+}
+
+/* styling for homepage only */
+
+.katie {
+    padding-left: 20px;
+    width: 70%;
+    min-width: 200px;
+}
+
+.katieHome {
+    flex-direction: row;
+}
+
+/* styling for about me page only */
+
+.tinder {
+    width: 100%;
+    min-width: 150px;
+}
+
+.tinder-container {
+    flex-direction: row;
+    width: 30%;
+}
+
+.katieFacts {
+    display: inline-block;
+    width: 100%;
+    font-size: 20px;
+    margin: auto;
+}
+
+.facts {
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* styling for diversity page only */
+
+div.graphs {
+    margin: auto;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+
+img.graphs {
+    display: inline-block;
+    width: 40%;
+    min-width: 200px;
+    margin: auto;
+}
+
+img.graphs:hover {
+    opacity: 70%;
+}
+
+ul.factors {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-left: none;
+    margin-right: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+li.factors {
+    background-color: #BF4C41;
+    color: #ffffff;
+    text-decoration: bold;
+    font-size: 20px;
+    padding: 8px 16px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 20px;
+    width: 20%;
+}
+
+li.factors:hover {
+    background-color: #ffffff;
+    color: #BF4C41;
+}
+
+.factor_description {
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.xerocon {
+    width: 80%;
+    border-radius: 20px;
+    margin: auto;
+    padding: 10px;
+    display: block;
+}
+
+.sources {
+    text-decoration: italic;
+    list-style-type: none;
+    font-size: 12px;
+    padding: 0;
+}
+
+/* styling for frisbee page only */
+
+.youtube {
+    min-height: 281px;
+    min-width: 500px;
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-width: 5px;
+    border-color: #BF4C41;
+    border-style: solid;
+}
+
+.fris {
+    flex-direction: column;
+    display: inline-block;
+    width: 100%;
+    margin-left: 25px;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.highlights {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+/* styling for frisbee page only - slideshow */
+
+.slideshow-container {
+    width: 80%;
+    position: relative;
+    margin-top: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Hide the other images by default */
+.slides {
+    display: none;
+}
+
+.slideshow-photo {
+    max-height: 600px;
+    width: 100%;
+    max-width: 1000px;
+    border-radius: 5px;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #BF4C41;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slide-caption {
+    color: #ffffff;
+    background-color: #000000;
+    opacity: 60%;
+    font-size: 15px;
+    padding: 8px 0;
+    position: absolute;
+    bottom: 45px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.dots {
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+/* styling for footer */
+
+footer {
+    color: #BF4C41;
+    background-color: #ffffff;
+    font-size: 10px;
+    font-style: italic;
+    padding: 5px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    height: 10%;
+}
+
+.logos {
+    width: 30px;
+    padding: 5px;
+}
+
+/* Adaptive design for phones - remember to update nav menu! */
+@media screen and (max-width: 760px) {
+    html {
+        font-size: 12px;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        margin-bottom: auto;
+        margin-right: 0;
+        width: 40%;
+        position: relative;
+    }
+
+    .menuButton {
+        display: flex;
+    }
+
+    .mobile-closed {
+        display: none;
+    }
+
+    .show {
+        display: flex;
+    }
+
+    ul.navBar {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+        padding: 0;
+        text-align: center;
+        position: absolute;
+        background-color: #BF4C41;
+        opacity: 90%;
+        border-radius: 20px;
+    }
+
+    li.navItem {
+        display: inline-block;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    main {
+        margin-bottom: 20%;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .content {
+        min-width: 200px;
+    }
+
+    .katie {
+        min-width: 150px;
+    }
+
+    .tinder {
+        min-width: 120px;
+    }
+
+    .katieFacts {
+        font-size: 16px;
+    }
+
+
+    ul.factors {
+        display: flex;
+        flex-direction: column;
+    }
+
+    li.factors {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .fris {
+        margin-left: auto;
+    }
+
+    .highlights {
+        text-align: left;
+    }
+
+    footer {
+        height: 12%;
+    }
+
+
+}
+
+@media screen and (max-width: 1000px) {
+    .youtube {
+        min-width: 380px;
+        min-height: 213px;
+    }
+}

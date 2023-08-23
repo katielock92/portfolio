@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Katie Lock | Portfolio: Diversity in Tech Scholarship</title>
+    <link rel="icon" href="../images/favicon.png" />
+
+  <!-- linking external css specific to this page -->
+    <link rel="stylesheet" href="../styles/pages/portfolio-post.css" />
+     <!-- importing google fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Assistant|Sora"
+    />
+    <!-- linking javascript file for making mobile menu operate -->
+    <script src="../scripts/scripts.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="home">
+         <!-- top left hand side of header for logo and name -->
+        <a href="../index.html"
+          ><img
+            class="logo"
+            alt="icon of the letter k"
+            src="../images/logo.png"
+        /></a>
+        <p class="name">katie lock</p>
+      </div>
+      <nav class="navigation">
+        <!-- top right-hand side of header with navigation menu, css used to switch between mobile hamburger menu and desktop horizontal menu -->
+        <button class="menuButton">
+          <img
+            src="../images/hamburger-menu.png"
+            class="hamburgericon"
+            onclick="toggleMobileNav()"
+          />
+        </button>
+        <div id="mobile-nav" class="mobile-closed">
+          <button class="navlink" onclick="window.location.href='../about.html';">about</button>
+          <button class="navlink" onclick="window.location.href='../portfolio.html';">portfolio</button>
+          <button class="navlink" onclick="window.location.href='../blog.html';">blog</button>
+          <button class="navlink" onclick="window.location.href='../contact.html';">contact</button>
+      </div>
+      </nav>
+    </header>
+    <main>
+      <div class="portfolio-image">
+        <img
+          alt="placeholder image"
+          src="../images/diversity-scholarship.png"
+        />
+      </div>
+      <article>
+        <h1>Diversity in Tech Scholarship Submission</h1>
+        <h4><em>January 2023</em></h4>
+        <h4>About</h4>
+        <p>
+          Upon applying for my Coder Academy web development bootcamp, my
+          immediate plan was to apply for the
+          <a
+            href="https://www.coderacademy.edu.au/diversity_in_tech_scholarship/about"
+            >Diversity in Tech Scholarship</a
+          >. The brief for the scholarship application was quite broad - we had
+          to submit a creative portfolio using our choice of media to convey who
+          we were, and how we would contribute to increasing diversity in the
+          tech industry.
+        </p>
+        <p>
+          I knew that with my submission, I wanted to challenge myself and show
+          was I was capable of. I had some previous experience with web
+          languages such as HTML and CSS, though this was going to require a lot
+          of time and research to successfully deliver my vision.
+        </p>
+        <p>
+          Over the course of a two week period (around my work and sport
+          commitments), I was able to build a basic and deploy a basic website
+          from scratch, without formal education in best practice. My
+          appreciation of clean, adaptive design ensured that I considered media
+          breakpoints from the very beginning and constructed hand-drawn
+          wireframes for both mobile and web views. I am also incredibly
+          grateful to be surrounded by intelligent and helpful peers, who could
+          provide me with tips and assist in testing for any display errors that
+          could be cleaned up.
+        </p>
+        <h4>Skills and technologies used:</h4>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>VS Code</li>
+          <li>GitHub</li>
+          <li>Cloudflare</li>
+        </ul>
+        <p>
+          Despite repurposing the custom domain for my new portfolio site, I
+          have retained the original website to show my growth as a developer:
+        </p>
+      </article>
+      <div class="buttons">
+        <!-- external page set to open in a new window, while going back to the portfolio stays within the same window -->
+      <button onclick="window.open('diversity-in-tech/index.html','_blank')">View original site →</button>
+      <button onclick="window.location.href='../portfolio.html';">Back to portfolio →</button></div>
+    </main>
+    <footer>
+      Fueled by ☕ (Katie Lock 2023)
+    </footer>
+  </body>
+</html>

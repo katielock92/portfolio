@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Katie Lock | Terminal Application: Quiz</title>
+    <link rel="icon" href="../images/favicon.png" />
+    <!-- linking external css specific to this page -->
+    <link rel="stylesheet" href="../styles/pages/portfolio-post.css" />
+    <!-- importing google fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Assistant|Sora"
+    />
+    <!-- linking javascript file for making mobile menu operate -->
+    <script src="../scripts/scripts.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="home">
+        <!-- top left hand side of header for logo and name -->
+        <a href="../index.html"
+          ><img
+            class="logo"
+            alt="icon of the letter k"
+            src="../images/logo.png"
+        /></a>
+        <p class="name">katie lock</p>
+      </div>
+      <nav class="navigation">
+        <!-- top right-hand side of header with navigation menu, css used to switch between mobile hamburger menu and desktop horizontal menu -->
+        <button class="menuButton">
+          <img
+            src="../images/hamburger-menu.png"
+            class="hamburgericon"
+            onclick="toggleMobileNav()"
+          />
+        </button>
+        <div id="mobile-nav" class="mobile-closed">
+          <button
+            class="navlink"
+            onclick="window.location.href='../about.html';"
+          >
+            about
+          </button>
+          <button
+            class="navlink"
+            onclick="window.location.href='../portfolio.html';"
+          >
+            portfolio
+          </button>
+          <button
+            class="navlink"
+            onclick="window.location.href='../blog.html';"
+          >
+            blog
+          </button>
+          <button
+            class="navlink"
+            onclick="window.location.href='../contact.html';"
+          >
+            contact
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="portfolio-image">
+        <img alt="screenshot of terminal application" src="../images/quiz-screenshot.png" />
+      </div>
+      <article>
+        <h1>Terminal Application: Quiz</h1>
+        <h4><em>April-May 2023</em></h4>
+        <h4>About</h4>
+        <p>
+          After beginning to learn Python only a month prior, for our third
+          assignment of the first Coder Academy term, we had two weeks to
+          design, develop and test a terminal application in Python.
+        </p>
+        <p>
+          Our application was required to have at least three features, involve
+          file handling and user input, utilise multiple Python libraries and
+          have multiple successful unit test cases. For my application, I opted
+          to create a Rules of Ultimate quiz - designed to emulate the real WFDF
+          Rules Accreditation website and quiz.
+        </p>
+        <p>
+          My application's features include a user registration and login
+          process, viewing previous results - along with the main quiz itself.
+          Every quiz attempt presents a random sample of true/false questions
+          that are then validated and scored.
+        </p>
+        <p>
+          The application runs locally through your machine's terminal
+          application, and can be downloaded from my
+          <a href="https://github.com/katielock92/CA-T1A3">GitHub</a>.
+        </p>
+        <h4>Skills and technologies used:</h4>
+        <ul>
+          <li>Markdown</li>
+          <li>Python</li>
+          <li>VS Code</li>
+          <li>GitHub</li>
+        </ul>
+      </article>
+      <div class="buttons">
+        <button onclick="window.location.href='../portfolio.html';">
+          Back to portfolio →
+        </button>
+      </div>
+    </main>
+    <footer>Fueled by ☕ (Katie Lock 2023)</footer>
+  </body>
+</html>
