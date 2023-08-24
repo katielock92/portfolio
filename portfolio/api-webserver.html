@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Katie Lock | Terminal Application: Quiz</title>
+    <title>Katie Lock | API Webserver: ATS</title>
     <link rel="icon" href="../images/favicon.png" />
     <!-- linking external css specific to this page -->
     <link rel="stylesheet" href="../styles/pages/portfolio-post.css" />
@@ -68,40 +68,63 @@
     </header>
     <main>
       <div class="portfolio-image">
-        <img alt="screenshot of terminal application" src="../images/quiz-screenshot.png" />
+        <img
+          alt="screenshot of api webserver"
+          src="../images/api-screenshot.png"
+        />
       </div>
       <article>
-        <h1>Terminal Application: Quiz</h1>
-        <h4><em>April-May 2023</em></h4>
-        <h4><em>Grade: 100% (High Distinction)</em></h4>
+        <h1>API Webserver: Applicant Tracking System</h1>
+        <h4><em>July 2023</em></h4>
+        <h4><em>Grade: 96% (High Distinction)</em></h4>
         <h4>About</h4>
         <p>
-          After beginning to learn Python only a month prior, for our third
-          assignment of the first Coder Academy term, we had two weeks to
-          design, develop and test a terminal application in Python.
+          A few months after our first Python application in Term 1, my next
+          coding assignment in Term 2 of Coder Academy involved creating an API webserver in
+          Python, utilising Flask and our ORM of choice to solve a real-world
+          problem. We had three weeks to select an app idea, submit a draft ERD
+          for approval, develop and document the database and the APIs.
         </p>
         <p>
-          Our application was required to have at least three features, involve
-          file handling and user input, utilise multiple Python libraries and
-          have multiple successful unit test cases. For my application, I opted
-          to create a Rules of Ultimate quiz - designed to emulate the real WFDF
-          Rules Accreditation website and quiz.
+          There was no specified number of API endpoints required, but it was
+          suggested to have around four tables in our relational database and to
+          ensure that each model included at least one of each of the four CRUD
+          methods - Create, Read, Update, Delete. I opted to use SQLAlchemy as my ORM, given this was what was taught to us and it suited the app requirements.
         </p>
         <p>
-          My application's features include a user registration and login
-          process, viewing previous results - along with the main quiz itself.
-          Every quiz attempt presents a random sample of true/false questions
-          that are then validated and scored.
+          I chose to base my relational database and webserver based on an
+          application I am familiar with from my current occupation in HR - an
+          Application Tracking System (ATS). Ultimately due to my familiarity
+          with this type of system and desire to provide a good foundation for a
+          future application, I ultimately ended up creating 7 tables and 35
+          endpoints.
         </p>
+        <p>Some of the key functionality of the webserver included:
+          <ul>
+            <li>encrypted user registration and login using Bcrypt</li>
+            <li>user session management and authentication using JWT</li>
+            <li>view open jobs</li>
+            <li>create, update and delete job listings (authorised users only)</li>
+            <li>update own user profile</li>
+            <li>update user permissions of other users (authorised users only)</li>
+            <li>apply for an open job</li>
+            <li>view candidates and applications (authorised users only)</li>
+            <li>update status on applications (authorised users only)</li>
+            <li>schedule interviews (authorised users only)</li>
+            <li>view your upcoming interviews, either as a candidate or interviewer</li>
+            <li>create interview scorecards (authorised users only)</li>
+          </ul></p>
         <p>
-          The application runs locally through your machine's terminal
-          application, and can be downloaded from my
-          <a href="https://github.com/katielock92/CA-T1A3">GitHub</a>.
+          Documentation for the application, along with instructions to download and operate, can be found here: <a href="https://github.com/katielock92/CA-T2A2">GitHub</a>.
         </p>
         <h4>Skills and technologies used:</h4>
         <ul>
           <li>Markdown</li>
           <li>Python</li>
+          <li>Flask</li>
+          <li>SQLAlchemy</li>
+          <li>PostgreSQL</li>
+          <li>Postman</li>
           <li>VS Code</li>
           <li>GitHub</li>
         </ul>

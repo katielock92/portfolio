@@ -22,7 +22,7 @@
 }
 
 @mixin nav-text {
-    /* styling for text in navifation bar */
+    /* styling for text in navigation bar */
     font-family: $font1;
     color: $color1;
     text-decoration: none;
@@ -45,7 +45,7 @@
 @mixin keywords { 
     /* for when one or a few keywords change colour within a span */
     span {
-        color: $color5;
+        color: $color2;
     }
 }
 
@@ -53,8 +53,8 @@
     /* styling for the main button used across the site */
     background-color: $color2;
     border: none;
-    box-shadow: 5px 5px $color3;
-    color: $color5;
+    box-shadow: 5px 5px $color5;
+    color: $color1;
     padding: 10px;
     text-align: center;
     font-family: $font2;
@@ -70,20 +70,20 @@
 
 @mixin shadow-5 { 
     /* styling shortcut for a 5px box shadow */
-    box-shadow: 5px 5px $color3;
+    box-shadow: 5px 5px $color5;
 }
 
 @mixin shadow-8 { 
     /* styling shortcut for a 8px box shadow */
-    box-shadow: 8px 8px $color2;
+    box-shadow: 8px 8px $color5;
 }
 
 @mixin shadow-10 { 
     /* styling shortcut for a 10px box shadow */
-    box-shadow: 10px 10px $color3;
+    box-shadow: 10px 10px $color5;
 }
 
 @mixin shadow-20 { 
     /* styling shortcut for a 20px box shadow */
-    box-shadow: 20px 20px $color3;
+    box-shadow: 20px 20px $color5;
 }

@@ -31,16 +31,16 @@ header .name {
 header nav {
   width: 40vw;
   margin-right: 20px;
-  /* styling for text in navifation bar */
+  /* styling for text in navigation bar */
   font-family: "Sora", serif;
-  color: #3C493F;
+  color: #0D0628;
   text-decoration: none;
   font-size: 1.3rem;
 }
 header nav .navlink {
-  /* styling for text in navifation bar */
+  /* styling for text in navigation bar */
   font-family: "Sora", serif;
-  color: #3C493F;
+  color: #0D0628;
   text-decoration: none;
   font-size: 1.3rem;
   transition-duration: 0.5s;
@@ -54,7 +54,7 @@ header nav .navlink {
 }
 header nav .navlink:hover {
   /* background of a menu option changes when hovered over */
-  background-color: #A2E3C4;
+  background-color: #FCA17D;
   cursor: pointer;
   opacity: 70%;
 }
@@ -80,8 +80,8 @@ header nav .menuButton .hamburgericon:hover {
 header nav .mobile-closed {
   /* hides the drop-down menu by default upon load */
   display: none;
-  background-color: #7E8D85;
-  opacity: 90%;
+  background-color: #DA627D;
+  opacity: 97%;
   border-radius: 20px;
   width: 40vw;
 }
@@ -161,9 +161,9 @@ body footer {
 /* Commence scss styling */
 body {
   /* setting basic default styling for body elements */
-  background-color: #F0F7F4;
+  background-color: #F9DBBD;
   font-family: "Sora", serif;
-  color: #3C493F;
+  color: #0D0628;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -220,7 +220,7 @@ main h1 {
   }
 }
 main h1 span {
-  color: #A2E3C4;
+  color: #DA627D;
 }
 main .portfolio .project {
   /* commonly used centered flex column display */
@@ -234,9 +234,9 @@ main .portfolio .project {
 main .portfolio .project img {
   display: block;
   width: clamp(250px, 100%, 400px);
-  box-shadow: 10px 10px #B3BFB8;
+  box-shadow: 10px 10px #FCA17D;
   margin-top: 10px;
-  border: 3px solid #3C493F;
+  border: 3px solid #0D0628;
   transition: 0.5s ease;
 }
 main .portfolio .project img:hover {
@@ -245,7 +245,7 @@ main .portfolio .project img:hover {
 }
 main .portfolio .project h3 {
   font-size: 1.5rem;
-  color: #7E8D85;
+  color: #DA627D;
   margin-bottom: -10px;
 }
 

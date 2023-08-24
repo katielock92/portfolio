@@ -31,16 +31,16 @@ header .name {
 header nav {
   width: 40vw;
   margin-right: 20px;
-  /* styling for text in navifation bar */
+  /* styling for text in navigation bar */
   font-family: "Sora", serif;
-  color: #3C493F;
+  color: #0D0628;
   text-decoration: none;
   font-size: 1.3rem;
 }
 header nav .navlink {
-  /* styling for text in navifation bar */
+  /* styling for text in navigation bar */
   font-family: "Sora", serif;
-  color: #3C493F;
+  color: #0D0628;
   text-decoration: none;
   font-size: 1.3rem;
   transition-duration: 0.5s;
@@ -54,7 +54,7 @@ header nav .navlink {
 }
 header nav .navlink:hover {
   /* background of a menu option changes when hovered over */
-  background-color: #A2E3C4;
+  background-color: #FCA17D;
   cursor: pointer;
   opacity: 70%;
 }
@@ -80,8 +80,8 @@ header nav .menuButton .hamburgericon:hover {
 header nav .mobile-closed {
   /* hides the drop-down menu by default upon load */
   display: none;
-  background-color: #7E8D85;
-  opacity: 90%;
+  background-color: #DA627D;
+  opacity: 97%;
   border-radius: 20px;
   width: 40vw;
 }
@@ -161,9 +161,9 @@ body footer {
 /* Commence scss styling */
 body {
   /* setting basic default styling for body elements */
-  background-color: #F0F7F4;
+  background-color: #F9DBBD;
   font-family: "Sora", serif;
-  color: #3C493F;
+  color: #0D0628;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -222,7 +222,7 @@ main h1 {
   }
 }
 main h1 span {
-  color: #A2E3C4;
+  color: #DA627D;
 }
 main .contact-page {
   /* commonly used centered flex column display */
@@ -241,7 +241,7 @@ main .contact-page .contact {
 main .contact-page .katie {
   width: clamp(200px, 85%, 350px);
   /* styling shortcut for a 10px box shadow */
-  box-shadow: 10px 10px #B3BFB8;
+  box-shadow: 10px 10px #FCA17D;
   margin-top: 20px;
 }
 main .contact-page .icon {
@@ -259,10 +259,10 @@ main .contact-page p {
 main .contact-page button {
   width: 120px;
   /* styling for the main button used across the site */
-  background-color: #7E8D85;
+  background-color: #DA627D;
   border: none;
-  box-shadow: 5px 5px #B3BFB8;
-  color: #A2E3C4;
+  box-shadow: 5px 5px #FCA17D;
+  color: #0D0628;
   padding: 10px;
   text-align: center;
   font-family: "Sora", serif;
